@@ -8,15 +8,24 @@ def square_root(a):
         raise ValueError("Cannot take square root of a negative number")
     return math.sqrt(a)
 
-def add(a, b): a + b
+def add(a, b):
+    return a + b
 
-def subtract(a, b): a - b
+def subtract(a, b):
+    return a - b
 
-def multiply(a, b): a * b
+def multiply(a, b):
+    return a * b
 
-def divide(a, b): b / a   # raise ZeroDivisionError if a == 0
+def divide(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    return b/a
 
-def logarithm(a, b): loga(b)# use math library/raise ValueError
 
-def exponent(a, b): ab
+def logarithm(a, b):
+    return math.log(a(b))
+
+def exponent(a, b):
+    return a**b
 
